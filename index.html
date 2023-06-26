@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>자상한</title>
+    <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .main-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+
+        .main-image input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            color: white;
+            font-size: 48px;
+            width: 60px;
+            text-align: center;
+            margin: 0 5px;
+            outline: none;
+        }
+
+        .main-image input::placeholder {
+            color: white;
+            opacity: 0.5;
+        }
+
+        .main-image a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .main-image button {
+            color: white;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .main-image button {
+            cursor: pointer;
+            margin-top: 100px;
+        }
+        
+    </style>
+    <script>
+        function openLink() {
+            var inputText = document.getElementById('text-input').value.trim();
+            if (inputText === "브" && document.getElementById('text-input2').value === "랜" && document.getElementById('text-input3').value === "딩") {
+                window.open("https://www.naver.com/", "_blank");
+            } else {
+                alert("오류: 올바른 답변이 아닙니다.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main-image">
+        <input type="text" id="text-input" placeholder=" " maxlength="1">
+        <input type="text" id="text-input2" placeholder=" " maxlength="1">
+        <input type="text" id="text-input3" placeholder=" " maxlength="1">
+        <br>
+        <button class="btn btn-primary" onclick="openLink()">Submit</button>
+    </div>
+</body>
+
+</html>
